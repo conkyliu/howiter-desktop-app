@@ -1,0 +1,76 @@
+Arguments: 
+  /Users/mac/.nvm/versions/node/v16.13.2/bin/node /Users/mac/.nvm/versions/node/v16.13.2/bin/yarn tauri start
+
+PATH: 
+  /Users/mac/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.0.2/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Users/mac/.cargo/bin:/Users/mac/Work/howiter/howiter-desktop-app/node_modules/.bin:/Users/mac/Library/Android/sdk/emulator:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/tools/bin:/Users/mac/Library/Android/sdk/platform-tools:/Users/mac/development/flutter/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/mac/Work/howiter/howiter-desktop-app/package.json: Unexpected token : in JSON at position 8
+      at JSON.parse (<anonymous>)
+      at /Users/mac/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/mac/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/mac/.nvm/versions/node/v16.13.2/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  "name": "howiter-desktop-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint",
+      "tauri:build": "vue-cli-service tauri:build",
+      "tauri:serve": "vue-cli-service tauri:serve",
+      "tauri:dev": "vue-cli-service tauri:dev"
+    },
+    "dependencies": {
+      "core-js": "^3.8.3",
+      "vue": "^2.6.14"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.16",
+      "@babel/eslint-parser": "^7.12.16",
+      "@vue/cli-plugin-babel": "~5.0.0",
+      "@vue/cli-plugin-eslint": "~5.0.0",
+      "@vue/cli-service": "~5.0.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-vue": "^8.0.3",
+      "vue-cli-plugin-tauri": "~1.0.0",
+      "vue-template-compiler": "^2.6.14"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+      ],
+      "parserOptions": {
+        "parser": "@babel/eslint-parser"
+      },
+      "rules": {}
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
