@@ -1,13 +1,12 @@
-name: "publish"
-on: [ push ]
-
+name: "test-on-pr"
+on: [ pull_request ]
 
 jobs:
-  publish-tauri:
+  test-tauri:
     strategy:
       fail-fast: false
       matrix:
-        platform: [ macos-latest, ubuntu-20.04, windows-latest ]
+        platform: [ windows-latest ]
 
     runs-on: ${{ matrix.platform }}
     steps:
@@ -30,9 +29,3 @@ jobs:
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
-          releaseName: "App v__VERSION__"
-          releaseBody: "See the assets to download this version and install."
-          releaseDraft: true
-          prerelease: false
