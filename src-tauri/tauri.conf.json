@@ -4,7 +4,8 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://localhost:8888/",
-    "distDir": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com"
+    "distDir": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "howiter-desktop-app",
@@ -26,9 +27,9 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/29x29.png",
-        "icons/120x120.png",
-        "icons/192x192.png",
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
         "icons/icon.icns",
         "icons/icon.ico"
       ],
