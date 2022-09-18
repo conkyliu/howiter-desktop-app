@@ -8,7 +8,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "howiter-desktop-app",
+    "productName": "howiterDesktopApp",
     "version": "../package.json"
   },
   "tauri": {
