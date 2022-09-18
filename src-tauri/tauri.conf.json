@@ -4,12 +4,12 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://localhost:8888/",
-    "distDir": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com",
+    "distDir": "../dist",
     "withGlobalTauri": true
   },
   "package": {
     "productName": "howiter-desktop-app",
-    "version": "0.1.0"
+    "version": "../package.json"
   },
   "tauri": {
     "allowlist": {
