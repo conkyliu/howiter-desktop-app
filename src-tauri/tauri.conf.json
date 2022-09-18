@@ -4,7 +4,7 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://localhost:8888/",
-    "distDir": "../dist",
+    "distDir": "../h5",
     "withGlobalTauri": true
   },
   "package": {
