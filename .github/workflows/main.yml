@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: '${{ steps.get_version.outputs.VERSION }}'
-          release_name: 'OhMyBox ${{ steps.get_version.outputs.VERSION }}'
+          release_name: 'howiter-desktop-app ${{ steps.get_version.outputs.VERSION }}'
           body: 'See the assets to download this version and install.'
 
   build-tauri:
@@ -36,7 +36,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [macos-latest, ubuntu-latest, windows-latest]
+        platform: [ macos-latest, ubuntu-latest, windows-latest ]
 
     runs-on: ${{ matrix.platform }}
     steps:
@@ -61,15 +61,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev webkit2gtk-4.0 libappindicator3-dev librsvg2-dev patchelf
 
-      # Install wasm-pack
-      - uses: jetli/wasm-pack-action@v0.3.0
-        with:
-          # Optional version of wasm-pack to install(eg. 'v0.9.1', 'latest')
-          version: v0.9.1
-
-      - name: Install rsw
-        run: cargo install rsw
-
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
@@ -85,7 +76,7 @@ jobs:
 
       - name: Install app dependencies and build it
         run: yarn && yarn build
-      - uses: tauri-apps/tauri-action@v0
+      - uses: tauri-apps/tauri-action@v0.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
