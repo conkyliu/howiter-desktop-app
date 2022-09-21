@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   release-update:
     runs-on: macos-latest
-    if: startsWith(github.repository, 'conkyliu')
+    if: startsWith(github.repository, 'howiter-desktop-app')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
