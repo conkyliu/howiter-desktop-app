@@ -1,3 +1,17 @@
+## v0.1.8
+
+### Features
+
+- i18n supports
+- Remote profile User Agent supports
+
+## v0.1.7
+
+### Features
+
+- i18n supports
+- Remote profile User Agent supports
+
 ## v0.1.6
 
 ### Features
