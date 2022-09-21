@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "howiterDesktopApp",
-    "version": "../package.json"
+    "version": "0.1.3"
   },
   "tauri": {
     "allowlist": {
