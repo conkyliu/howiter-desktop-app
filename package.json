@@ -1,7 +1,7 @@
 {
   "name": "howiter-desktop-app",
   "private": true,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,8 +14,11 @@
   "dependencies": {
     "@actions/github": "^5.0.3",
     "@tauri-apps/api": "^1.1.0",
+    "adm-zip": "^0.5.9",
     "fs-extra": "^10.1.0",
+    "https-proxy-agent": "^5.0.1",
     "node-fetch": "^3.2.10",
+    "process": "^0.11.10",
     "vue": "^3.2.37"
   },
   "devDependencies": {
