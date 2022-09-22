@@ -1,4 +1,4 @@
-name: Release CI
+name: mian Release CI
 
 on:
   push:
