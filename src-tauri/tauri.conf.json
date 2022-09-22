@@ -3,7 +3,7 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com/",
-    "distDir": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com/",
+    "distDir": "../h5",
     "withGlobalTauri": true
   },
   "package": {
