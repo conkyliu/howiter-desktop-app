@@ -2,7 +2,7 @@
   "build": {
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
-    "devPath": "http://localhost:8888/",
+    "devPath": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com/",
     "distDir": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com/",
     "withGlobalTauri": true
   },
@@ -59,7 +59,7 @@
       "csp": "script-src 'unsafe-eval' 'self'; default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'; img-src data: 'self';"
     },
     "updater": {
-      "active": false,
+      "active": true,
       "endpoints": [
         "https://github.com/conkyliu/howiter-desktop-app/releases/download/updater/update.json",
         "https://hub.fastgit.xyz/conkyliu/howiter-desktop-app/releases/download/updater/update-proxy.json"
