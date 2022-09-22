@@ -12,9 +12,9 @@ jobs:
       matrix:
         os: [windows-latest]
     runs-on: ${{ matrix.os }}
-    #if: |
-    #  startsWith(github.repository, 'conkyliu') &&
-    #  startsWith(github.ref, 'refs/tags/v')
+    if: |
+      startsWith(github.repository, 'conkyliu') &&
+      startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -90,9 +90,9 @@ jobs:
   release-update:
     needs: release
     runs-on: macos-latest
-    #if: |
-    #  startsWith(github.repository, 'conkyliu') &&
-    #  startsWith(github.ref, 'refs/tags/v')
+    if: |
+      startsWith(github.repository, 'conkyliu') &&
+      startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
