@@ -63,7 +63,8 @@
       "dialog": false,
       "endpoints": [
         "https://howiter.com/update.json"
-      ]
+      ],
+      "pubkey": ""
     },
     "windows": [
       {
