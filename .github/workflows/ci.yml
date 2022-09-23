@@ -10,7 +10,7 @@ jobs:
   release:
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest ]
     runs-on: ${{ matrix.os }}
     if: |
       startsWith(github.repository, 'conkyliu') &&

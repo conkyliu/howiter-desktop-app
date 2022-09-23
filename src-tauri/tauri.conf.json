@@ -2,7 +2,7 @@
   "build": {
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
-    "devPath": "http://static-840fedca-0537-4b91-bda9-c941a2c04fa1.bspapp.com/",
+    "devPath": "http://localhost:8888",
     "distDir": "../h5",
     "withGlobalTauri": true
   },
@@ -59,16 +59,16 @@
       "csp": "script-src 'unsafe-eval' 'self'; default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'; img-src data: 'self';"
     },
     "updater": {
-      "active": false,
+      "active": true,
+      "dialog": false,
       "endpoints": [
-        "https://github.com/conkyliu/howiter-desktop-app/releases/download/updater/update.json",
-        "https://hub.fastgit.xyz/conkyliu/howiter-desktop-app/releases/download/updater/update-proxy.json"
+        "https://howiter.com/update.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDFERjVCRTNCQjVCQjI3MzcKUldRM0o3dTFPNzcxSFpncW1CNVYyZzNZZ0R0Z1FvV25wcGRSMUNFU2Qvc0lyU$"
     },
     "windows": [
       {
-        "fullscreen": true,
+        "fullscreen": false,
         "height": 1920,
         "resizable": true,
         "title": "Howiter 一体机",
