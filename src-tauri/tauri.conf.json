@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "howiter-desktop-app",
-    "version": "0.2.7"
+    "version": "0.2.5"
   },
   "tauri": {
     "allowlist": {
@@ -52,19 +52,22 @@
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
-        "timestampUrl": ""
+        "timestampUrl": "",
+        "wix": {
+          "language": "zh-CN"
+        }
       }
     },
     "security": {
       "csp": "script-src 'unsafe-eval' 'self'; default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'; img-src data: 'self';"
     },
     "updater": {
-      "active": true,
-      "dialog": false,
+      "active": false,
+      "dialog": true,
       "endpoints": [
         "https://howiter.com/update.json"
       ],
-      "pubkey": ""
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRFRDI1NzMwMEEwMEZFOUMKUldTYy9nQUtNRmZTVG1OZklvQzcyVFJyZUFKaUhJaFhvc0FzSDVhS$"
     },
     "windows": [
       {
