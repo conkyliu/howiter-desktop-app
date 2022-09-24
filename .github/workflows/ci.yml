@@ -72,8 +72,8 @@ jobs:
           tagName: v__VERSION__
           releaseName: "Howiter Desktop v__VERSION__"
           releaseBody: "More new features are now supported."
-          releaseDraft: false
-          prerelease: true
+          releaseDraft: true
+          prerelease: false
 
   #      - name: Portable Bundle
   #        if: matrix.os == 'windows-latest'

@@ -68,11 +68,11 @@
       }
     },
     "security": {
-      "csp": null
+      "csp": "script-src 'unsafe-eval' 'self'; default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'; img-src data: 'self';"
     },
     "updater": {
       "active": true,
-      "dialog": true,
+      "dialog": false,
       "endpoints": [
         "https://file.howiter.com/app/desktop/update.json"
       ],
@@ -80,7 +80,7 @@
     },
     "windows": [
       {
-        "fullscreen": false,
+        "fullscreen": true,
         "height": 1920,
         "resizable": true,
         "title": "Howiter 一体机",
