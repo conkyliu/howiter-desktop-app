@@ -38,14 +38,10 @@ async function resolveUpdater() {
         notes: await resolveUpdateLog(tag.name), // use updatelog.md
         pub_date: new Date().toISOString(),
         platforms: {
-            win64: { signature: "", url: "" }, // compatible with older formats
-            linux: { signature: "", url: "" }, // compatible with older formats
-            darwin: { signature: "", url: "" }, // compatible with older formats
-            "darwin-aarch64": { signature: "", url: "" },
-            "darwin-intel": { signature: "", url: "" },
+           "darwin-aarch64": { signature: "", url: "" },
+            "darwin-x86_64": { signature: "", url: "" },
             "linux-x86_64": { signature: "", url: "" },
-            "windows-x86_64": { signature: "", url: "" },
-            "windows-i686": { signature: "", url: "" }, // no supported
+            "windows-x86_64": { signature: "", url: "" }
         },
     };
 
@@ -67,13 +63,13 @@ async function resolveUpdater() {
         // darwin url (intel)
         if (name.endsWith(".app.tar.gz") && !name.includes("aarch")) {
             updateData.platforms.darwin.url = browser_download_url;
-            updateData.platforms["darwin-intel"].url = browser_download_url;
+            updateData.platforms["darwin-x86_64"].url = browser_download_url;
         }
         // darwin signature (intel)
         if (name.endsWith(".app.tar.gz.sig") && !name.includes("aarch")) {
             const sig = await getSignature(browser_download_url);
             updateData.platforms.darwin.signature = sig;
-            updateData.platforms["darwin-intel"].signature = sig;
+            updateData.platforms["darwin-x86_64"].signature = sig;
         }
 
         // darwin url (aarch)

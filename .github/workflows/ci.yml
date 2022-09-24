@@ -1,6 +1,6 @@
 name: Release CI
 
-on: [push]
+on: [ push ]
 
 env:
   CARGO_INCREMENTAL: 0
@@ -10,7 +10,7 @@ jobs:
   release:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest ]
+        os: [ macos-latest, windows-latest ]
     runs-on: ${{ matrix.os }}
     if: |
       startsWith(github.repository, 'conkyliu') &&
@@ -75,17 +75,17 @@ jobs:
           releaseDraft: false
           prerelease: true
 
-#      - name: Portable Bundle
-#        if: matrix.os == 'windows-latest'
-#        # rebuild with env settings
-#        run: |
-#          yarn build
-#          yarn run portable
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
-#          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
-#          VITE_WIN_PORTABLE: 1
+  #      - name: Portable Bundle
+  #        if: matrix.os == 'windows-latest'
+  #        # rebuild with env settings
+  #        run: |
+  #          yarn build
+  #          yarn run portable
+  #        env:
+  #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+  #          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+  #          VITE_WIN_PORTABLE: 1
 
   release-update:
     needs: release

@@ -1,23 +1,39 @@
 {
-  "version": "v1.3.0",
-  "notes": "Test version",
-  "pub_date": "2022-09-23T11:17:14.994Z",
+  "name": "v1.0.0",
+  "notes": "",
+  "pub_date": "2022-09-24T06:14:24.066Z",
   "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app_0.2.8_x64_zh-CN.msi.zip"
+    },
+    "linux": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydjZITVM5WGlKQ2tyUVRxeG1wWnQ4NmN3NkhXVXhUWVZlc1RPTXVqSHJCdC9IOHdOQ3ZKVEdDckwwdGdpbXBPU1drWFQvOFBqeXhUNGNCbGttQjFEblFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTU0CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcF8wLjIuOF9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKYktnSDJ2OVZ6Y0Q4RFVSeGNiWWxzMWNjaE5BR092OWVKUy9CTyt3bkdYdGpoNUY2ZWNBQjlxcTJlOGtFVmQrM2tORi8rYVJoNGFSUnhPT3FzaFZPRGc9PQo=",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app_0.2.8_amd64.AppImage.tar.gz"
+    },
     "darwin-x86_64": {
-      "signature": "",
-      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.5_aarch64.dmg"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "",
-      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.5_aarch64.dmg"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app.app.tar.gz"
+    },
+    "darwin-intel": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "",
-      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.4_amd64.deb"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydjZITVM5WGlKQ2tyUVRxeG1wWnQ4NmN3NkhXVXhUWVZlc1RPTXVqSHJCdC9IOHdOQ3ZKVEdDckwwdGdpbXBPU1drWFQvOFBqeXhUNGNCbGttQjFEblFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTU0CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcF8wLjIuOF9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKYktnSDJ2OVZ6Y0Q4RFVSeGNiWWxzMWNjaE5BR092OWVKUy9CTyt3bkdYdGpoNUY2ZWNBQjlxcTJlOGtFVmQrM2tORi8rYVJoNGFSUnhPT3FzaFZPRGc9PQo=",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app_0.2.8_amd64.AppImage.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.4_x64_en-US.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app_0.2.8_x64_zh-CN.msi.zip"
+    },
+    "windows-i686": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUUC9nTFVQOERydnpiWFZXZjdXN1lYRmdFdG14bHVnRWFtNHRSb3M5T2tEc0xKSU1nTTlVK0ZId0VMZzhNR1hDMnpmeSttVmhRWWlONmw2UFJPVUVuREd1YnMrYTZobGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjYzOTk5OTk4CWZpbGU6aG93aXRlci1kZXNrdG9wLWFwcC5hcHAudGFyLmd6CkFqd2x2QUNGaFIva3BPdFZlNXJGbFUrWWNPN0cvOVdXcE0zVkNWYkpxOEx2Ym1qdGtUT2hsb3lPRys5dVFLSmdHVjQ3WHpHeWZpblpvRlpQV0hKdkF3PT0K",
+      "url": "https://github.com/conkyliu/howiter-desktop-app/releases/download/v0.2.8/howiter-desktop-app_0.2.8_x64_zh-CN.msi.zip"
     }
   }
 }
