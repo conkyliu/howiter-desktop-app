@@ -38,7 +38,6 @@ async function resolveUpdater() {
         notes: await resolveUpdateLog(tag.name), // use updatelog.md
         pub_date: new Date().toISOString(),
         platforms: {
-           "darwin-aarch64": { signature: "", url: "" },
             "darwin-x86_64": { signature: "", url: "" },
             "linux-x86_64": { signature: "", url: "" },
             "windows-x86_64": { signature: "", url: "" }
@@ -49,48 +48,48 @@ async function resolveUpdater() {
         const { name, browser_download_url } = asset;
 
         // win64 url
-        if (name.endsWith(".msi.zip") && name.includes("en-US")) {
-            updateData.platforms.win64.url = browser_download_url;
+        if (name.endsWith(".msi.zip") && name.includes("zh-CN")) {
+            //updateData.platforms.win64.url = browser_download_url;
             updateData.platforms["windows-x86_64"].url = browser_download_url;
         }
         // win64 signature
-        if (name.endsWith(".msi.zip.sig") && name.includes("en-US")) {
+        if (name.endsWith(".msi.zip.sig") && name.includes("zh-CN")) {
             const sig = await getSignature(browser_download_url);
-            updateData.platforms.win64.signature = sig;
+            //updateData.platforms.win64.signature = sig;
             updateData.platforms["windows-x86_64"].signature = sig;
         }
 
         // darwin url (intel)
         if (name.endsWith(".app.tar.gz") && !name.includes("aarch")) {
-            updateData.platforms.darwin.url = browser_download_url;
+            //updateData.platforms.darwin.url = browser_download_url;
             updateData.platforms["darwin-x86_64"].url = browser_download_url;
         }
         // darwin signature (intel)
         if (name.endsWith(".app.tar.gz.sig") && !name.includes("aarch")) {
             const sig = await getSignature(browser_download_url);
-            updateData.platforms.darwin.signature = sig;
+            //updateData.platforms.darwin.signature = sig;
             updateData.platforms["darwin-x86_64"].signature = sig;
         }
 
         // darwin url (aarch)
-        if (name.endsWith("aarch64.app.tar.gz")) {
-            updateData.platforms["darwin-aarch64"].url = browser_download_url;
-        }
-        // darwin signature (aarch)
-        if (name.endsWith("aarch64.app.tar.gz.sig")) {
-            const sig = await getSignature(browser_download_url);
-            updateData.platforms["darwin-aarch64"].signature = sig;
-        }
+        // if (name.endsWith("aarch64.app.tar.gz")) {
+        //     updateData.platforms["darwin-aarch64"].url = browser_download_url;
+        // }
+        // // darwin signature (aarch)
+        // if (name.endsWith("aarch64.app.tar.gz.sig")) {
+        //     const sig = await getSignature(browser_download_url);
+        //     updateData.platforms["darwin-aarch64"].signature = sig;
+        // }
 
         // linux url
         if (name.endsWith(".AppImage.tar.gz")) {
-            updateData.platforms.linux.url = browser_download_url;
+            //updateData.platforms.linux.url = browser_download_url;
             updateData.platforms["linux-x86_64"].url = browser_download_url;
         }
         // linux signature
         if (name.endsWith(".AppImage.tar.gz.sig")) {
             const sig = await getSignature(browser_download_url);
-            updateData.platforms.linux.signature = sig;
+            //updateData.platforms.linux.signature = sig;
             updateData.platforms["linux-x86_64"].signature = sig;
         }
     });
