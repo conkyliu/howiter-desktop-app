@@ -20,6 +20,15 @@
           "https://*",
           "http://*"
         ]
+      },
+      "os": {
+        "all": true
+      },
+      "fs": {
+        "all": true
+      },
+      "dialog": {
+        "all": true
       }
     },
     "bundle": {
@@ -59,15 +68,15 @@
       }
     },
     "security": {
-      "csp": "script-src 'unsafe-eval' 'self'; default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self'; img-src data: 'self';"
+      "csp": null
     },
     "updater": {
       "active": true,
       "dialog": true,
       "endpoints": [
-        "https://howiter.com/update.json"
+        "https://file.howiter.com/app/desktop/update.json"
       ],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRFRDI1NzMwMEEwMEZFOUMKUldTYy9nQUtNRmZTVG1OZklvQzcyVFJyZUFKaUhJaFhvc0FzSDVhS$"
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJGRUJDMDNGRDQwMkZFQ0YKUldUUC9nTFVQOERydjZkdWo5cWJXazF0NzdLRUJ2N05HU1VtNkJFeWNXakpUd0lRT29BSFIvWWYK"
     },
     "windows": [
       {
