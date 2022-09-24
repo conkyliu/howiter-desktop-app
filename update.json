@@ -5,7 +5,7 @@
   "platforms": {
     "darwin-x86_64": {
       "signature": "",
-      "url": "https://github.com/lemarier/tauri-test/releases/download/v1.0.0/app.app.tar.gz"
+      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.5_aarch64.dmg"
     },
     "darwin-aarch64": {
       "signature": "",
@@ -13,11 +13,11 @@
     },
     "linux-x86_64": {
       "signature": "",
-      "url": "https://github.com/lemarier/tauri-test/releases/download/v1.0.0/app.AppImage.tar.gz"
+      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.4_amd64.deb"
     },
     "windows-x86_64": {
       "signature": "",
-      "url": "https://github.com/lemarier/tauri-test/releases/download/v1.0.0/app.x64.msi.zip"
+      "url": "https://file.howiter.com/app/desktop/howiter-desktop-app_0.2.4_x64_en-US.msi"
     }
   }
 }
