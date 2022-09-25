@@ -72,7 +72,7 @@
     },
     "updater": {
       "active": true,
-      "dialog": false,
+      "dialog": true,
       "endpoints": [
         "https://file.howiter.com/app/desktop/update.json"
       ],
@@ -80,7 +80,7 @@
     },
     "windows": [
       {
-        "fullscreen": true,
+        "fullscreen": false,
         "height": 1920,
         "resizable": true,
         "title": "Howiter 一体机",
