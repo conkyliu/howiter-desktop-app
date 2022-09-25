@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
-import { getOctokit, context } from "@actions/github";
-import { resolveUpdateLog } from "./updatelog.mjs";
+import {getOctokit, context} from "@actions/github";
+import {resolveUpdateLog} from "./updatelog.mjs";
 
 const UPDATE_TAG_NAME = "updater";
 const UPDATE_JSON_FILE = "update.json";
@@ -13,10 +13,10 @@ async function resolveUpdater() {
         throw new Error("GITHUB_TOKEN is required");
     }
 
-    const options = { owner: context.repo.owner, repo: context.repo.repo };
+    const options = {owner: context.repo.owner, repo: context.repo.repo};
     const github = getOctokit(process.env.GITHUB_TOKEN);
 
-    const { data: tags } = await github.rest.repos.listTags({
+    const {data: tags} = await github.rest.repos.listTags({
         ...options,
         per_page: 10,
         page: 1,
@@ -28,29 +28,30 @@ async function resolveUpdater() {
     console.log(tag);
     console.log();
 
-    const { data: latestRelease } = await github.rest.repos.getReleaseByTag({
+    const {data: latestRelease} = await github.rest.repos.getReleaseByTag({
         ...options,
         tag: tag.name,
     });
 
     const updateData = {
         name: tag.name,
+        version: tag.name.split('v')[1],
         notes: await resolveUpdateLog(tag.name), // use updatelog.md
         pub_date: new Date().toISOString(),
         platforms: {
-            win64: { signature: "", url: "" }, // compatible with older formats
-            linux: { signature: "", url: "" }, // compatible with older formats
-            darwin: { signature: "", url: "" }, // compatible with older formats
-           // "darwin-aarch64": { signature: "", url: "" },
-            "darwin-x86_64": { signature: "", url: "" },
-            "linux-x86_64": { signature: "", url: "" },
-            "windows-x86_64": { signature: "", url: "" },
+            win64: {signature: "", url: ""}, // compatible with older formats
+            linux: {signature: "", url: ""}, // compatible with older formats
+            darwin: {signature: "", url: ""}, // compatible with older formats
+            // "darwin-aarch64": { signature: "", url: "" },
+            "darwin-x86_64": {signature: "", url: ""},
+            "linux-x86_64": {signature: "", url: ""},
+            "windows-x86_64": {signature: "", url: ""},
             //"windows-i686": { signature: "", url: "" }, // no supported
         },
     };
 
     const promises = latestRelease.assets.map(async (asset) => {
-        const { name, browser_download_url } = asset;
+        const {name, browser_download_url} = asset;
 
         // win64 url
         if (name.endsWith(".msi.zip") && name.includes("zh-CN")) {
@@ -127,9 +128,9 @@ async function resolveUpdater() {
     });
 
     // update the update.json
-    const { data: updateRelease } = await github.rest.repos.getReleaseByTag({
+    const {data: updateRelease} = await github.rest.repos.getReleaseByTag({
         ...options,
-        tag: UPDATE_TAG_NAME,
+        tag: tag.name,
     });
 
     // delete the old assets
@@ -143,7 +144,7 @@ async function resolveUpdater() {
 
         if (asset.name === UPDATE_JSON_PROXY) {
             await github.rest.repos
-                .deleteReleaseAsset({ ...options, asset_id: asset.id })
+                .deleteReleaseAsset({...options, asset_id: asset.id})
                 .catch(console.error); // do not break the pipeline
         }
     }
@@ -168,7 +169,7 @@ async function resolveUpdater() {
 async function getSignature(url) {
     const response = await fetch(url, {
         method: "GET",
-        headers: { "Content-Type": "application/octet-stream" },
+        headers: {"Content-Type": "application/octet-stream"},
     });
 
     return response.text();
