@@ -1,6 +1,7 @@
 {
-  "name": "v03.3",
-  "notes": "",
+  "name": "v0.3.3",
+  "version": "v0.3.3",
+  "notes": "test version",
   "pub_date": "2022-09-24T06:14:24.066Z",
   "platforms": {
     "win64": {
