@@ -130,7 +130,7 @@ async function resolveUpdater() {
     // update the update.json
     const {data: updateRelease} = await github.rest.repos.getReleaseByTag({
         ...options,
-        tag: tag.name,
+        tag: UPDATE_TAG_NAME,
     });
 
     // delete the old assets
