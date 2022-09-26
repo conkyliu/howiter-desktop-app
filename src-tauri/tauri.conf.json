@@ -74,7 +74,8 @@
       "active": true,
       "dialog": true,
       "endpoints": [
-        "https://file.howiter.com/app/desktop/update.json"
+        "https://github.com/conkyliu/howiter-desktop-app/releases/download/updater/update.json",
+        "https://ghproxy.com/?q=https://github.com/conkyliu/howiter-desktop-app/releases/download/updater/update-proxy.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJGRUJDMDNGRDQwMkZFQ0YKUldUUC9nTFVQOERydjZkdWo5cWJXazF0NzdLRUJ2N05HU1VtNkJFeWNXakpUd0lRT29BSFIvWWYK"
     },

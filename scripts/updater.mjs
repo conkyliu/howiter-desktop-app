@@ -34,8 +34,8 @@ async function resolveUpdater() {
     });
 
     const updateData = {
-        name: tag.name,
-        version: tag.name.split('v')[1],
+        //name: tag.name,
+        version: tag.name,//.split('v')[1],
         notes: await resolveUpdateLog(tag.name), // use updatelog.md
         pub_date: new Date().toISOString(),
         platforms: {
@@ -118,10 +118,11 @@ async function resolveUpdater() {
 
     Object.entries(updateDataNew.platforms).forEach(([key, value]) => {
         if (value.url) {
-            updateDataNew.platforms[key].url = value.url.replace(
-                "https://github.com/",
-                "https://hub.fastgit.xyz/"
-            );
+            let prex = "https://ghproxy.com/?q=";
+            updateDataNew.platforms[key].url = prex + value.url
+            // .replace(
+            // "https://github.com/",
+            // "https://ghproxy.com/?q=");
         } else {
             console.log(`[Error]: updateDataNew.platforms.${key} is null`);
         }
