@@ -81,7 +81,7 @@
     },
     "windows": [
       {
-        "fullscreen": false,
+        "fullscreen": true,
         "height": 1920,
         "resizable": true,
         "title": "Howiter 一体机",
