@@ -58,7 +58,7 @@ jobs:
           yarn run check
 
       - name: Tauri build
-        uses: tauri-apps/tauri-action@0e558392ccadcb49bcc89e7df15a400e8f0c954d
+        uses: tauri-apps/tauri-action@v0
         # enable cache even though failed
         # continue-on-error: true
         env:
@@ -96,7 +96,7 @@ jobs:
 
 #      - name: Get yarn cache dir path
 #        id: yarn-cache-dir-path
-#        run: echo "::set-output name=dir::$(yarn cache dir)"
+#        run: echo "name=$(yarn cache dir)" >>$GITHUB_OUTPUT
 #
 #      - name: Yarn Cache
 #        uses: actions/cache@v2
